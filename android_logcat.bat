@@ -1,6 +1,6 @@
 @ECHO OFF
 set INTERVAL=5
 :GETLOGCAT
-adb -d logcat com.example.abc:d
+adb logcat -s "Unity"
 timeout %INTERVAL%
 GOTO GETLOGCAT
